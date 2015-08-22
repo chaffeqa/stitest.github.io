@@ -4,14 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Ionic List Directive</title>
-   
+
     <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
+    <style>a.item-content:active {background-color: black;}</style>
   </head>
 <body ng-controller="MyCtrl" class="grade-a platform-browser platform-macintel platform-ready">
-  
 
-  
-    
+
+
+
     <ion-header-bar class="bar-positive bar bar-header disable-user-behavior">
       <div class="buttons">
         <button class="button button-icon icon ion-ios-minus-outline" ng-click="data.showDelete = !data.showDelete; data.showReorder = false"></button>
@@ -27,15 +28,15 @@
     <ion-content overflow-scroll="true" class="scroll-content ionic-scroll overflow-scroll  has-header"><div class="scroll">
 
       <!-- The list directive is great, but be sure to also checkout the collection repeat directive when scrolling through large lists -->
-      
+
       <ion-list show-delete="data.showDelete" show-reorder="data.showReorder" class="disable-user-behavior"><div class="list">
 
         <!-- ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/0" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/0" href="#/item/0">
           Item 0
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -43,10 +44,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/1" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/1" href="#/item/1">
           Item 1
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -54,10 +55,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/2" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/2" href="#/item/2">
           Item 2
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -65,10 +66,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/3" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/3" href="#/item/3">
           Item 3
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -76,10 +77,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/4" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/4" href="#/item/4">
           Item 4
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -87,10 +88,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/5" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/5" href="#/item/5">
           Item 5
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -98,10 +99,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/6" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/6" href="#/item/6">
           Item 6
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -109,10 +110,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/7" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/7" href="#/item/7">
           Item 7
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -120,10 +121,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/8" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/8" href="#/item/8">
           Item 8
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -131,10 +132,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/9" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/9" href="#/item/9">
           Item 9
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -142,10 +143,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/10" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/10" href="#/item/10">
           Item 10
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -153,10 +154,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/11" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/11" href="#/item/11">
           Item 11
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -164,10 +165,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/12" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/12" href="#/item/12">
           Item 12
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -175,10 +176,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/13" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/13" href="#/item/13">
           Item 13
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -186,10 +187,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/14" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/14" href="#/item/14">
           Item 14
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -197,10 +198,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/15" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/15" href="#/item/15">
           Item 15
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -208,10 +209,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/16" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/16" href="#/item/16">
           Item 16
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -219,10 +220,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/17" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/17" href="#/item/17">
           Item 17
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -230,10 +231,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/18" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/18" href="#/item/18">
           Item 18
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -241,10 +242,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/19" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/19" href="#/item/19">
           Item 19
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -252,10 +253,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/20" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/20" href="#/item/20">
           Item 20
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -263,10 +264,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/21" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/21" href="#/item/21">
           Item 21
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -274,10 +275,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/22" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/22" href="#/item/22">
           Item 22
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -285,10 +286,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/23" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/23" href="#/item/23">
           Item 23
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -296,10 +297,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/24" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/24" href="#/item/24">
           Item 24
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -307,10 +308,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/25" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/25" href="#/item/25">
           Item 25
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -318,10 +319,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/26" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/26" href="#/item/26">
           Item 26
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -329,10 +330,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/27" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/27" href="#/item/27">
           Item 27
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -340,10 +341,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/28" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/28" href="#/item/28">
           Item 28
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -351,10 +352,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/29" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/29" href="#/item/29">
           Item 29
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -362,10 +363,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/30" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/30" href="#/item/30">
           Item 30
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -373,10 +374,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/31" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/31" href="#/item/31">
           Item 31
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -384,10 +385,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/32" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/32" href="#/item/32">
           Item 32
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -395,10 +396,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/33" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/33" href="#/item/33">
           Item 33
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -406,10 +407,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/34" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/34" href="#/item/34">
           Item 34
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -417,10 +418,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/35" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/35" href="#/item/35">
           Item 35
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -428,10 +429,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/36" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/36" href="#/item/36">
           Item 36
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -439,10 +440,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/37" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/37" href="#/item/37">
           Item 37
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -450,10 +451,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/38" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/38" href="#/item/38">
           Item 38
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -461,10 +462,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/39" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/39" href="#/item/39">
           Item 39
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -472,10 +473,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/40" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/40" href="#/item/40">
           Item 40
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -483,10 +484,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/41" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/41" href="#/item/41">
           Item 41
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -494,10 +495,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/42" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/42" href="#/item/42">
           Item 42
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -505,10 +506,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/43" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/43" href="#/item/43">
           Item 43
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -516,10 +517,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/44" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/44" href="#/item/44">
           Item 44
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -527,10 +528,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/45" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/45" href="#/item/45">
           Item 45
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -538,10 +539,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/46" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/46" href="#/item/46">
           Item 46
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -549,10 +550,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/47" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/47" href="#/item/47">
           Item 47
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -560,10 +561,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/48" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/48" href="#/item/48">
           Item 48
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -571,10 +572,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/49" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/49" href="#/item/49">
           Item 49
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
@@ -582,10 +583,10 @@
             Share
           </ion-option-button></div><div data-prevent-scroll="true" class="item-right-edit item-reorder enable-pointer-events"><ion-reorder-button class="ion-navicon button icon button-icon" on-reorder="moveItem(item, $fromIndex, $toIndex)" data-prevent-scroll="true"></ion-reorder-button></div></ion-item><!-- end ngRepeat: item in items --><ion-item ng-repeat="item in items" item="item" href="#/item/50" class="item-remove-animate item item-complex item-left-editable item-right-editable"><a class="item-content ng-binding" ng-href="#/item/50" href="#/item/50">
           Item 50
-          
-          
-          
-          
+
+
+
+
         </a><div class="item-left-edit item-delete enable-pointer-events"><ion-delete-button class="ion-minus-circled button icon button-icon" ng-click="onItemDelete(item)">
           </ion-delete-button></div><div class="item-options invisible"><ion-option-button class="button-assertive button" ng-click="edit(item)">
             Edit
